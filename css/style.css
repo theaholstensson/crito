@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 html, body {
   color: #191919;
   font-family: "Inter", sans-serif;
@@ -6,8 +7,9 @@ html, body {
   font-weight: 400;
 }
 
-.btn-theme {
+.btn-yellow {
   background-color: #f9d783;
+  border: 1px solid #f9d783;
   border-color: #f9d783;
   border-radius: 40px;
   color: #191919;
@@ -15,13 +17,34 @@ html, body {
   padding: 14px 24px;
   font-weight: 600;
 }
-.btn-theme i {
+.btn-yellow i {
   margin-left: 8px;
   font-size: 0.9em;
 }
-.btn-theme:hover {
+.btn-yellow:hover {
   background-color: #191919;
+  border-color: #191919;
   color: #f9d783;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid #191919;
+  border-color: #191919;
+  border-radius: 40px;
+  color: #191919;
+  text-decoration: none;
+  padding: 14px 24px;
+  font-weight: 600;
+}
+.btn-transparent i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-transparent:hover {
+  background-color: #191919;
+  border-color: #191919;
+  color: #f0efe9;
 }
 
 header {
@@ -126,4 +149,41 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   left: 50%;
   bottom: -3px;
   transform: translate(calc(50% - 15px));
+}
+
+.showcase {
+  background-color: #f0efe9;
+}
+.showcase .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase .container .content h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+}
+@media (min-width: 1200px) {
+  .showcase .container .content h1 {
+    display: 70px;
+  }
+}
+.showcase .container .content p {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.showcase .container .content a {
+  margin-right: 16px;
+  padding: 18px 36px;
+}
+.showcase .container img {
+  display: none;
+  margin-right: -50px;
+}
+@media (min-width: 1200px) {
+  .showcase .container img {
+    display: block;
+  }
 }
