@@ -7,6 +7,19 @@ html, body {
   font-weight: 400;
   line-height: 1.5;
 }
+html h1, body h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+html h2, body h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+html h3, body h3 {
+  color: #F94D1C;
+  font-size: 18px;
+  font-weight: 500;
+}
 
 .wrapper-grid {
   height: 100vh;
@@ -253,18 +266,18 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 .sponsors .container {
   display: flex;
+  justify-content: space-between;
 }
 .sponsors img {
   width: 224px;
   height: 88px;
-  margin-right: 50px;
 }
 
 .features {
   border: 1px solid rgba(25, 25, 25, 0.1254901961);
   margin-left: 200px;
   margin-right: 200px;
-  margin-bottom: 40px;
+  margin-bottom: 120px;
   margin-top: 80px;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -272,16 +285,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .features .container {
   display: flex;
 }
-.features .container .info h3 {
-  color: #F94D1C;
-  font-size: 18px;
-  font-weight: 500;
-}
-.features .container h1 {
-  font-size: 45px;
-  font-weight: 700;
+.features .container .info h1 {
   margin-top: 18px;
-  margin-bottom: 48px;
+  margin-bottom: 60px;
   width: 80%;
 }
 .features .container a {
@@ -294,18 +300,16 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .features .container i {
   font-size: 14px;
 }
-.features .container .info-cards {
+.features .container .info-side {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 60px;
   margin-right: 100px;
 }
-.features .container .info-cards .content-box i {
+.features .container .info-side .content-box i {
   font-size: 30px;
 }
-.features .container .info-cards .content-box h2 {
-  font-size: 22px;
-  font-weight: 700;
+.features .container .info-side .content-box h2 {
   margin-top: 28px;
   margin-bottom: 19px;
 }
@@ -323,13 +327,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   width: 533px;
 }
 .about-company .container .about h3 {
-  color: #F94D1C;
-  font-size: 18px;
-  font-weight: 500;
+  margin-bottom: 18px;
 }
 .about-company .container .about h1 {
-  font-size: 45px;
-  font-weight: 700;
   margin-bottom: 37px;
   width: 80%;
 }
@@ -361,6 +361,67 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .about-company .container .about .buttons .video-btn-text span {
   font-size: 16px;
 }
-.about-company .container .about .buttons .video-btn-text:active {
+.about-company .container .about .buttons .video-btn-text:hover {
   color: #f9d783;
+}
+
+.our-services {
+  background-color: #f0efe9;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.our-services .container h1 {
+  margin-top: 18px;
+  width: 40%;
+}
+.our-services .container .info-cards {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.our-services .container .info-cards .cards {
+  background-color: #FFFFFF;
+  width: 308px;
+  height: 333px;
+  padding: 30px;
+}
+.our-services .container .info-cards .cards p {
+  margin-top: 16px;
+  margin-bottom: 40px;
+  line-height: 28px;
+}
+.our-services .container .info-cards .cards .btn-arrow {
+  background-color: #191919;
+  color: #ffffff;
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 15px 23px;
+  float: right;
+}
+.our-services .container .info-cards .cards .btn-arrow:hover {
+  background-color: #f9d783;
+  color: #191919;
+}
+.our-services .container .info-cards .color {
+  background-color: #f9d783;
+}
+.our-services .container .info-cards .color .btn-arrow {
+  background-color: #ffffff;
+  color: #191919;
+}
+.our-services .container .info-cards .color .btn-arrow:hover {
+  background-color: #191919;
+  color: #ffffff;
+}
+.our-services .container .bottom {
+  display: flex;
+  justify-content: center;
+}
+.our-services .container .bottom .btn-transparent {
+  padding: 16px 35px;
+}
+.our-services .container .bottom .btn-transparent i {
+  margin-left: 15px;
+  font-size: 16px;
 }
