@@ -696,6 +696,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .signup .container .column {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 footer {
