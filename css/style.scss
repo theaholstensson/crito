@@ -40,7 +40,7 @@ html, body {
     border-radius: 40px;
     color: #191919;
     text-decoration: none;
-    padding: 14px 24px;
+    padding: 12px 24px;
     font-weight: 600;
 
     i {
@@ -232,6 +232,15 @@ header {
 
 .showcase {
     background-color: #f0efe9;
+    position: relative;
+    z-index: 0;
+
+    .background-lines {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
 
     .container {
         display: flex;
@@ -368,66 +377,93 @@ header {
 
 .about-company {
     margin-bottom: 120px;
-
-    .container {
     display: flex;
+    position: relative;
+    z-index: 0;
 
-        .founder {
-            margin-right: 200px;
+    .founder-box {
+        width: 368px;
+        height: 180px;
+        background-color: #beebff;
+        position: absolute;
+        bottom: 40px;
+        left: 300px;
+        z-index: 1;
+        padding: 33px 24px;
 
-            img {
-                width: 533px;
-            }
-        }
-
-        .about {
-            h3 {
-                margin-bottom: 18px;
-            }
-
-            h1 {
-                margin-bottom: 37px;
-                width: 80%;
+        .founder-info {
+            h2, h3 {
+                display: inline;
             }
 
             p {
-                line-height: 32px;
-                margin-bottom: 35px;
-                width: 90%;
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    }
+
+    .founder {
+        margin-left: 200px;
+        margin-right: 200px;
+
+        img {
+            width: 533px;
+            height: 615px;
+            object-fit: cover;
+            margin-left: 155px;
+        }
+    }
+
+    .about {
+        margin-right: 220px;
+
+        h3 {
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            margin-bottom: 37px;
+            width: 90%;
+        }
+
+        p {
+            line-height: 32px;
+            margin-bottom: 35px;
+            width: 82%;
+        }
+
+        .buttons {
+            margin-top: 87px;
+            display: flex;
+            align-items: center;
+
+            .btn-black {
+                padding: 16px 36px;
             }
 
-            .buttons {
-                margin-top: 87px;
+            .video-btn-text {
+                text-decoration: none;
+                color: #191919;
+                margin-left: 25px;
                 display: flex;
                 align-items: center;
+                margin-left: 40px;
 
-                .btn-black {
-                    padding: 16px 36px;
+                i {
+                    font-size: 40px;
+                    margin-right: 16px;
                 }
 
-                .video-btn-text {
-                    text-decoration: none;
-                    color: #191919;
-                    margin-left: 25px;
-                    display: flex;
-                    align-items: center;
-                    margin-left: 40px;
-
-                    i {
-                        font-size: 40px;
-                        margin-right: 16px;
-                    }
-
-                    span {
-                        font-size: 16px;
-                        
-                    }
-
-                    &:hover {
-                        color: #444444;
-                    }
-
+                span {
+                    font-size: 16px;
+                    
                 }
+
+                &:hover {
+                    color: #444444;
+                }
+
             }
         }
     }
@@ -437,6 +473,15 @@ header {
     background-color: #f0efe9;
     padding-top: 120px;
     padding-bottom: 120px;
+    position: relative;
+    z-index: 0;
+
+    .background-lines {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
 
     .container {
         h1 {
@@ -512,6 +557,18 @@ header {
 
 .why-choose-us {
     margin-bottom: 120px;
+    position: relative;
+    z-index: 0;
+
+    .background-box {
+        width: 1057px;
+        height: 425px;
+        background-color: #f0efe9;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
     
     .container {
         display: flex;
@@ -521,15 +578,15 @@ header {
 
             h1 {
                 margin-top: 18px;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
                 width: 65%;
             }
 
-            .parent {
+            .icon {
                 display: flex;
                 margin-top: 20px;
 
-                .child {
+                .text {
                     margin-left: 24px;
                     margin-top: 15px;
                 }
@@ -542,6 +599,8 @@ header {
 
             img {
                 width: 645px;
+                height: 505px;
+                object-fit: cover;
             }
         }
 
@@ -792,10 +851,45 @@ header {
             column-gap: 30px;
 
             .news {
-                img {
-                    width: 420px;
-                    height: 230px;
-                    object-fit: cover;
+
+                .img-date {
+                    position: relative;
+
+                    .image {
+ 
+                    }
+
+                    img {
+                        width: 420px;
+                        height: 230px;
+                        object-fit: cover;
+                    }
+
+                    .date-box {
+                        background-color: #f9d783;
+                        width: 56px;
+                        height: 64px;
+                        position: absolute;
+                        top: 16px;
+                        left: 16px;
+                        display: flex;
+                        justify-content: center;
+
+
+                        .date {
+                            padding: 6px;
+    
+                            h2 {
+                                margin-bottom: 0;
+                                padding-left: 3px;
+                            }
+    
+                            p {
+                                font-size: 18px;
+                                padding-left: 1px;
+                            }
+                        }
+                    }
                 }
 
                 h4 {
@@ -809,6 +903,10 @@ header {
                 h2 {
                     width: 70%;
                     margin-bottom: 20px;
+                }
+
+                p {
+                    line-height: 28px;
                 }
             }
         }
@@ -842,6 +940,13 @@ header {
     background-color: #f0efe9;
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
+
+    .background-lines {
+        position: absolute;
+        bottom: 55px;
+        right: 0;
+    }
 
     .container {
 
@@ -849,6 +954,20 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        .subscribe {
+            input {
+                border-radius: 25px;
+                padding: 16px 36px;
+                border: none;
+                outline: none;
+                margin-right: 16px;
+            }
+
+            .btn-yellow {
+                padding: 16px 36px;
+            }
         }
     }
 }
@@ -858,16 +977,30 @@ footer {
     color: #ffffff;
     padding-top: 110px;
 
-    .container {
+    .top-menu {
+        border-bottom: 1px solid #ffffff20;
+        position: relative;
 
-        .top-menu {
-            display: flex;
-            column-gap: 90px;
+        .background-lines {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .container {
+            display: grid; 
+            grid-template-columns: 2fr repeat(4, 1fr); 
+            grid-template-rows: 1fr; 
+            grid-column-gap: 80px;
             padding-bottom: 90px;
+
+            img {
+                width: 168px;
+            }
 
             .info {
                 p {
-                    width: 80%;
+                    width: 95%;
                     margin-top: 30px;
                     line-height: 26px;
                     color: #ffffff70;
@@ -875,41 +1008,45 @@ footer {
             }
 
             .links {
-                
-
                 h2 {
+                    margin-top: 10px;
                     margin-bottom: 46px;
                 }
 
-                
                 a {
                     text-decoration: none;
                     color: #ffffff70;
                     line-height: 40px;
+                    display: block;
                 }
             }
         }
+    }
 
-        .bottom-menu {
+    .bottom-menu {
+        margin: 30px 0px;
+
+        .container {
             display: flex;
             justify-content: space-between;
-
+    
             p {
                 color: #ffffff70;
             }
-
+    
             .social-media {
-
+    
                 a {
                     color: #ffffff;
                     margin-left: 18px;
                     font-size: 16px;
-
+    
                     &:hover {
                         color: #ffffff70
                     }
                 }
             }
+
         }
     }
 }
