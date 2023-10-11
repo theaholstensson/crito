@@ -1,0 +1,193 @@
+.breadcrumb {
+    background-color: #f0efe9;
+    padding-top: 100px;
+    padding-bottom: 105px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    nav {
+        padding-bottom: 10px;
+        a {
+            text-decoration: none;
+            color: #191919;
+            padding-right: 12px;
+        }
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 56px;
+    }
+}
+
+.news-articles {
+    padding-top: 130px;
+    padding-bottom: 85px;
+
+    .container {
+        display: none;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+           
+        }
+
+        .articles {
+            margin-top: 35px;
+            margin-bottom: 100px;
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: repeat(3, 1fr); 
+            grid-column-gap: 30px;
+            grid-row-gap: 60px; 
+            
+            a {
+                text-decoration: none;
+                h2, p {
+                    color: #191919;
+                }
+            }
+
+            .news {
+
+                .img-date {
+                    position: relative;
+
+                    .image {
+                        img {
+                            width: 420px;
+                            height: 230px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .date-box {
+                        background-color: #f9d783;
+                        width: 56px;
+                        height: 64px;
+                        position: absolute;
+                        top: 16px;
+                        left: 16px;
+                        display: flex;
+                        justify-content: center;
+
+
+                        .date {
+                            padding: 12px;
+    
+                            h2 {
+                                margin-bottom: 0;
+                                padding-left: 3px;
+                                line-height: 20px;
+                            }
+    
+                            p {
+                                font-size: 18px;
+                                padding-left: 1px;
+                            }
+                        }
+                    }
+                }
+
+                h4 {
+                    margin-top: 28px;
+                    margin-bottom: 24px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #6A6C71;
+                }
+
+                h2 {
+                    width: 85%;
+                    margin-bottom: 20px;
+                    line-height: 33px;
+                }
+
+                p {
+                    line-height: 28px;
+                    width: 100%;
+                }
+
+                &:hover {
+                    h2, p {
+                        color: #505050;
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            column-gap: 10px;
+
+            .btn-page {
+                border: 1px solid #EAE9F2;
+                border-radius: 5px;
+                width: 38px;
+                height: 38px;
+                padding-top: 2px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #191919;
+                text-align: center;
+                font-size: 21px;
+
+                &.active,
+                &:hover {
+                    background-color: #191919;
+                    border-color: #191919;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.signup {
+    background-color: #f0efe9;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+
+    .background-lines {
+        position: absolute;
+        bottom: 55px;
+        right: 0;
+    }
+
+    .container {
+
+        .column {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .subscribe {
+            input {
+                border-radius: 25px;
+                padding: 16px 36px;
+                border: none;
+                outline: none;
+                margin-right: 16px;
+            }
+
+            .btn-yellow {
+                padding: 16px 36px;
+            }
+        }
+    }
+}
