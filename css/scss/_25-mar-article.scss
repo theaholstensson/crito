@@ -115,6 +115,7 @@
 
                         &:hover {
                             background-color: #dedede;
+                            transition: background-color 0.2s ease-in-out;
                         }
                     }
 
@@ -148,6 +149,11 @@
                             color: #19191990;
                         }
                     }
+
+                    &:hover {
+                        background-color: #eeeeee;
+                        transition: background-color 0.2s ease-in-out;
+                    }
                 }
 
                 .recent-box {
@@ -162,25 +168,37 @@
                         margin-bottom: 25px;
                     }
 
-                    .post {
-                        border-bottom: 1px solid #19191910;
-                        margin-bottom: 20px;
+                    a {
+                        text-decoration: none;
 
-                        h5 {
-                            font-size: 16px;
-                            font-weight: 700;
-                            line-height: 26px;
+                        .post {
+                            border-bottom: 1px solid #19191910;
+                            margin-bottom: 20px;
+    
+                            h5 {
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 26px;
+                                color: #191919;
+                            }
+    
+                            p {
+                                font-size: 14px;
+                                color: #19191995;
+                            }
+
+                            .last {
+                                border-bottom: none;
+                                margin-bottom: 0;
+                            }
+
+                            &:hover {
+                                h5, p {
+                                    color: #505050;
+                                    transition: color 0.2s ease-in-out;
+                                }
+                            }
                         }
-
-                        p {
-                            font-size: 14px;
-                            color: #19191995;
-                        }
-                    }
-
-                    .last {
-                        border-bottom: none;
-                        margin-bottom: 0;
                     }
                 }
 
@@ -197,21 +215,32 @@
                         margin-bottom: 25px;
                     }
 
-                    .category {
-                        display: flex;
+                    a {
+                        text-decoration: none;
 
-                        h5 {
-                            font-size: 16px;
-                            font-weight: 700;
-                            line-height: 26px;
-                            margin-right: 4px;
-                            color: #191919;
-                        }
+                        .category {
+                            display: flex;
+    
+                            h5 {
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 26px;
+                                margin-right: 4px;
+                                color: #191919;
+                            }
+    
+                            p {
+                                font-size: 14px;
+                                color: #19191995;
+                                padding-top: 3px;
+                            }
 
-                        p {
-                            font-size: 14px;
-                            color: #19191995;
-                            padding-top: 3px;
+                            &:hover {
+                                h5, p {
+                                    color: #505050;
+                                    transition: color 0.2s ease-in-out;
+                                }
+                            }
                         }
                     }
                 }
@@ -246,6 +275,7 @@
                 &:hover {
                     background-color: transparent;
                     color: #191919;
+                    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
                 }
             }
         }
@@ -323,6 +353,7 @@
                 &:hover {
                     h2, p {
                         color: #505050;
+                        transition: color 0.2s ease-in-out;
                     }
                 }
             }
@@ -343,6 +374,7 @@
 
                 &:hover {
                     color: #191919;
+                    transition: color 0.2s ease-in-out;
                 }
             }
 

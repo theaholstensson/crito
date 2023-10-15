@@ -30,16 +30,104 @@
 }
 
 .contact {
+    margin-top: 120px;
+    margin-bottom: 80px;
 
     .container {
 
         .contact-info {
-            display: flex;
-            justify-content: space-between;
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: 1fr; 
+            grid-column-gap: 30px;
 
             .contact-box {
                 border: 1px solid #19191920;
+                padding: 50px 60px;
+                display: flex;
+
+                .icon {
+                    margin-right: 24px;
+                    i {
+                        color: #ffffff;
+                        border: 1px solid #191919;
+                        border-radius: 50%;
+                        padding: 18px;
+                        background-color: #191919;
+                    }
+
+                    .location {
+                        padding: 18px 20px;
+                    }
+                }
+
+                .info {
+                    h2 {
+                        margin-bottom: 25px;
+                    }
+
+                    p {
+                        margin-bottom: 4px;
+                    }
+                }
             }
         }
+    }
+}
+
+.leave-us-a-message {
+    margin-bottom: 120px;
+
+    .container {
+        background-color: #f0efe9;
+        padding: 100px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            width: 35%;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 32px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+
+            #name, #email, #message {
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                padding: 18px 36px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+
+                &:hover {
+                    background-color: #f1f1f1;
+                    transition: background-color 0.2s ease-in-out;
+                }
+            }
+
+            #message {
+                margin-bottom: 44px;
+                height: 160px;
+            }
+            
+            .btn-yellow {
+                text-align: center;
+                padding: 18px 0px;
+            }
+        }
+    }
+}
+
+.map {
+    .google-map {
+        width: 100%;
+        height: 620px;
+        margin-bottom: -6px;
     }
 }

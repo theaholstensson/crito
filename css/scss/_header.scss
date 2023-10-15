@@ -78,7 +78,8 @@ header {
                         margin-left: 18px;
 
                         &:hover {
-                            color: #444444
+                            color: #505050;
+                            transition: color 0.2s ease-in-out;
                         }
                     }
                 }

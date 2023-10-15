@@ -229,6 +229,7 @@
 
                 &:hover {
                     color: #444444;
+                    transition: color 0.2s ease-in-out;
                 }
 
             }
@@ -268,9 +269,15 @@
                 height: 333px;
                 padding: 30px;
 
+                .line {
+                    border-bottom: 2px solid #191919;
+                    width: 18%;
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                }
+
                 p {
                     margin-top: 16px;
-                    margin-bottom: 40px;
                     line-height: 28px;
                 }
 
@@ -281,20 +288,24 @@
                     border-radius: 50%;
                     padding: 15px 23px;
                     float: right;
+                    margin-top: 10px;;
 
                     &:hover {
                         background-color: #f9d783;
                         color: #191919;
+                        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
                     }
                 }
                 
                 &:hover {
                     background-color: #f9d783;
+                    transition: background-color 0.3s ease-in-out;
 
                     .btn-arrow {
                         &:hover {
                         background-color: #ffffff;
                         color: #191919;
+                        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
                         }
                     }
                 } 
@@ -427,6 +438,7 @@
 
                     &:hover {
                         color: #444444;
+                        transition: color 0.2 ease-in-out;
                     }
                 }
             }
@@ -502,6 +514,7 @@
 
                 &:hover {
                     color: #191919;
+                    transition: color 0.2s ease-in-out;
                 }
             }
 
@@ -684,6 +697,7 @@
                 &:hover {
                     h2, p {
                         color: #505050;
+                        transition: color 0.2s ease-in-out;
                     }
                 }
             }
@@ -704,6 +718,7 @@
 
                 &:hover {
                     color: #191919;
+                    transition: color 0.2s ease-in-out;
                 }
             }
 
