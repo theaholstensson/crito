@@ -26,6 +26,7 @@ html h3, body h3 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
 }
 
 .btn-yellow {
@@ -697,6 +698,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 
 .article-news {
+  background-color: #ffffff;
   padding-top: 120px;
   padding-bottom: 90px;
 }
@@ -818,6 +820,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   border: none;
   outline: none;
   margin-right: 16px;
+}
+.signup .container .subscribe input:hover {
+  background-color: #fbfbfb;
 }
 .signup .container .subscribe .btn-yellow {
   padding: 16px 36px;
@@ -1008,6 +1013,10 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   color: #191919;
   padding-right: 12px;
 }
+.breadcrumb nav a:hover {
+  color: #444444;
+  transition: color 0.2s ease-in-out;
+}
 .breadcrumb h1 {
   font-weight: 700;
   font-size: 56px;
@@ -1186,55 +1195,55 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   transition: color 0.2s ease-in-out;
 }
 
-.article-news {
+.article-news2 {
   padding-top: 40px;
   padding-bottom: 70px;
   background-color: #f0efe9;
 }
-.article-news .container {
+.article-news2 .container {
   display: flex;
   flex-direction: column;
 }
-.article-news .container .browse {
+.article-news2 .container .browse {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.article-news .container .browse h1 {
+.article-news2 .container .browse h1 {
   margin-top: 18px;
 }
-.article-news .container .browse .btn-transparent {
+.article-news2 .container .browse .btn-transparent {
   background-color: #ffffff;
   padding: 12px 40px;
 }
-.article-news .container .browse .btn-transparent:hover {
+.article-news2 .container .browse .btn-transparent:hover {
   background-color: transparent;
   color: #191919;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-.article-news .container .articles {
+.article-news2 .container .articles {
   margin-top: 35px;
   display: flex;
   justify-content: space-between;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-.article-news .container .articles a {
+.article-news2 .container .articles a {
   text-decoration: none;
 }
-.article-news .container .articles a h2, .article-news .container .articles a p {
+.article-news2 .container .articles a h2, .article-news2 .container .articles a p {
   color: #191919;
 }
-.article-news .container .articles .news .img-date {
+.article-news2 .container .articles .news .img-date {
   position: relative;
 }
-.article-news .container .articles .news .img-date .image img {
+.article-news2 .container .articles .news .img-date .image img {
   width: 420px;
   height: 230px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.article-news .container .articles .news .img-date .date-box {
+.article-news2 .container .articles .news .img-date .date-box {
   background-color: #f9d783;
   width: 56px;
   height: 64px;
@@ -1244,52 +1253,52 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   display: flex;
   justify-content: center;
 }
-.article-news .container .articles .news .img-date .date-box .date {
+.article-news2 .container .articles .news .img-date .date-box .date {
   padding: 6px;
 }
-.article-news .container .articles .news .img-date .date-box .date h2 {
+.article-news2 .container .articles .news .img-date .date-box .date h2 {
   margin-bottom: 0;
   padding-left: 3px;
 }
-.article-news .container .articles .news .img-date .date-box .date p {
+.article-news2 .container .articles .news .img-date .date-box .date p {
   font-size: 18px;
   padding-left: 1px;
 }
-.article-news .container .articles .news h4 {
+.article-news2 .container .articles .news h4 {
   margin-top: 28px;
   margin-bottom: 24px;
   font-size: 16px;
   font-weight: 400;
   color: #6A6C71;
 }
-.article-news .container .articles .news h2 {
+.article-news2 .container .articles .news h2 {
   width: 70%;
   margin-bottom: 20px;
 }
-.article-news .container .articles .news p {
+.article-news2 .container .articles .news p {
   line-height: 28px;
 }
-.article-news .container .articles .news:hover h2, .article-news .container .articles .news:hover p {
+.article-news2 .container .articles .news:hover h2, .article-news2 .container .articles .news:hover p {
   color: #505050;
   transition: color 0.2s ease-in-out;
 }
-.article-news .container .dots {
+.article-news2 .container .dots {
   display: flex;
   justify-content: center;
   margin-top: 70px;
 }
-.article-news .container .dots a {
+.article-news2 .container .dots a {
   color: rgba(25, 25, 25, 0.1254901961);
   margin: 10px;
 }
-.article-news .container .dots a i {
+.article-news2 .container .dots a i {
   font-size: 12px;
 }
-.article-news .container .dots a:hover {
+.article-news2 .container .dots a:hover {
   color: #191919;
   transition: color 0.2s ease-in-out;
 }
-.article-news .container .dots .active {
+.article-news2 .container .dots .active {
   color: #191919;
 }
 
@@ -1315,6 +1324,10 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   text-decoration: none;
   color: #191919;
   padding-right: 12px;
+}
+.breadcrumb nav a:hover {
+  color: #444444;
+  transition: color 0.2s ease-in-out;
 }
 .breadcrumb h1 {
   font-weight: 700;
@@ -1386,7 +1399,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   box-sizing: border-box;
 }
 .leave-us-a-message .container form #name:hover, .leave-us-a-message .container form #email:hover, .leave-us-a-message .container form #message:hover {
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
   transition: background-color 0.2s ease-in-out;
 }
 .leave-us-a-message .container form #message {
