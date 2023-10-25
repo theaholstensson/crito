@@ -1,17 +1,29 @@
 .breadcrumb {
     background-color: #f0efe9;
-    padding-top: 100px;
-    padding-bottom: 105px;
+    padding-top: 60px;
+    padding-bottom: 65px;
     position: relative;
+    z-index: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    @media (min-width: 992px) {
+        padding-top: 100px;
+        padding-bottom: 105px;
+    }
+
     img {
         position: absolute;
         bottom: 0;
         left: 0;
+        z-index: -1;
+        display: none;
+
+        @media (min-width: 1400px) {
+            display: block;
+        }
     }
 
     nav {
@@ -31,25 +43,51 @@
     h1 {
         font-weight: 700;
         font-size: 56px;
+        text-align: center;
     }
 }
 
 .contact {
-    margin-top: 120px;
-    margin-bottom: 80px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+    @media (min-width: 1200px) {
+        margin-top: 120px;
+        margin-bottom: 80px;
+    }
 
     .container {
 
         .contact-info {
-            display: grid; 
-            grid-template-columns: repeat(3, 1fr); 
-            grid-template-rows: 1fr; 
-            grid-column-gap: 30px;
+            @media (min-width: 768px) {
+                display: grid; 
+                grid-template-columns: repeat(3, 1fr); 
+                grid-template-rows: 1fr; 
+                grid-column-gap: 5px;
+
+                @media (min-width: 1200px) {
+                    grid-column-gap: 30px;
+                }
+            }
 
             .contact-box {
                 border: 1px solid #19191920;
                 padding: 50px 60px;
                 display: flex;
+                margin-top: 20px;
+
+                @media (min-width: 768px) {
+                    padding: 10px 2px;
+                }
+
+                @media (min-width: 992px) {
+                    padding: 20px 25px;
+                }
+
+                @media (min-width: 1200px) {
+                    padding: 50px 60px;
+                }
+
 
                 .icon {
                     margin-right: 24px;
@@ -81,20 +119,45 @@
 }
 
 .leave-us-a-message {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
+
+    @media (min-width: 992px) {
+        margin-bottom: 120px;
+    }
 
     .container {
         background-color: #f0efe9;
-        padding: 100px 0px;
+        padding: 60px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
 
+        @media (min-width: 992px) {
+            padding: 100px 0px;
+        }
+
         h1 {
-            width: 35%;
             text-align: center;
             margin-top: 20px;
             margin-bottom: 32px;
+            font-size: 40px;
+
+            @media (min-width: 768px) {
+                width: 60%;
+            }
+
+            @media (min-width: 992px) {
+                width: 45%;
+                font-size: 45px;
+            }
+
+            @media (min-width: 1200px) {
+                width: 40%;
+            }
+
+            @media (min-width: 1400px) {
+                width: 35%;
+            }
         }
 
         form {
